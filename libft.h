@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 10:22:08 by ghwa              #+#    #+#             */
-/*   Updated: 2023/07/21 11:53:56 by ghwa             ###   ########.fr       */
+/*   Updated: 2023/08/09 09:58:09 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,12 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+int		ft_printf(const char *format, ...);
+int		ft_pfputnbr(int n, int i);
+int		ft_pfputstr(char *s);
+int		ft_pfputchar(char c);
+int		ft_pfstrlen(const char *s);
+int		ft_pfputuintptr(unsigned int num, int x, int i, int c);
+int		ft_pfputunbr(unsigned int n, int i);
 
 #endif
