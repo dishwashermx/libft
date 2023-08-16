@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 11:10:38 by ghwa              #+#    #+#             */
-/*   Updated: 2023/08/09 09:54:38 by ghwa             ###   ########.fr       */
+/*   Updated: 2023/08/09 11:06:45 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,7 +71,7 @@ int	ft_pfputuintptr(unsigned int num, int x, int i, int c)
 		if (num == 0)
 		{
 			ft_pfputnbr(0, 1);
-			return (1);
+			return (i + 1);
 		}
 	}
 	if (num != 0)

@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/25 11:07:10 by ghwa              #+#    #+#             */
-/*   Updated: 2023/08/09 09:58:26 by ghwa             ###   ########.fr       */
+/*   Updated: 2023/08/09 11:06:30 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	ft_pfformats(va_list args, const char format)
 	else if (format == 'd' || format == 'i')
 		i += ft_pfputnbr(va_arg(args, int), 0);
 	else if (format == 'p')
-		i += ft_pfputuintptr(va_arg(args, uintptr_t), 1, 0, 2);
+		i += ft_pfputuintptr(va_arg(args, uintptr_t), 1, 2, 2);
 	else if (format == 'u')
 		i += ft_pfputunbr(va_arg(args, unsigned int), 0);
 	else if (format == 'x')

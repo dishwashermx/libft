@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 10:22:08 by ghwa              #+#    #+#             */
-/*   Updated: 2023/08/09 09:58:09 by ghwa             ###   ########.fr       */
+/*   Updated: 2023/08/16 15:16:07 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,11 @@ int		ft_pfputchar(char c);
 int		ft_pfstrlen(const char *s);
 int		ft_pfputuintptr(unsigned int num, int x, int i, int c);
 int		ft_pfputunbr(unsigned int n, int i);
+char	*ft_gnlstrjoin(char *s1, char *s2);
+int		ft_gnlstrlen(const char *s);
+char	*get_next_line(int fd);
+int		ft_gnlstrchr(const char *s, int c);
+char	*ft_gnlsubstr(char const *s, unsigned int start, size_t len);
+char	*ft_gnlstrdup(const char *s1);
 
 #endif
