@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 10:22:08 by ghwa              #+#    #+#             */
-/*   Updated: 2023/08/16 15:16:07 by ghwa             ###   ########.fr       */
+/*   Updated: 2023/09/14 16:19:15 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <fcntl.h>
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1
+# endif
 
 typedef struct s_list
 {
@@ -78,5 +82,6 @@ char	*get_next_line(int fd);
 int		ft_gnlstrchr(const char *s, int c);
 char	*ft_gnlsubstr(char const *s, unsigned int start, size_t len);
 char	*ft_gnlstrdup(const char *s1);
+int		ft_countchr(char *s, char c);
 
 #endif

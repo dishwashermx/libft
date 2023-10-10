@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/25 11:07:10 by ghwa              #+#    #+#             */
-/*   Updated: 2023/08/09 11:06:30 by ghwa             ###   ########.fr       */
+/*   Updated: 2023/09/20 14:24:03 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ int	ft_pfstrlen(const char *s)
 		i++;
 	return (i);
 }
-
 
 int	ft_pfformats(va_list args, const char format)
 {
@@ -77,4 +76,3 @@ int	ft_printf(const char *str, ...)
 	va_end(args);
 	return (i);
 }
-
