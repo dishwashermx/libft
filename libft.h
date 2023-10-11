@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 10:22:08 by ghwa              #+#    #+#             */
-/*   Updated: 2023/09/14 16:19:15 by ghwa             ###   ########.fr       */
+/*   Updated: 2023/10/11 10:44:36 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,5 +83,6 @@ int		ft_gnlstrchr(const char *s, int c);
 char	*ft_gnlsubstr(char const *s, unsigned int start, size_t len);
 char	*ft_gnlstrdup(const char *s1);
 int		ft_countchr(char *s, char c);
+int		ft_strendcmp(const char *s1, const char *s2);
 
 #endif
