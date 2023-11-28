@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/18 16:58:37 by ghwa              #+#    #+#             */
-/*   Updated: 2023/11/21 10:57:11 by ghwa             ###   ########.fr       */
+/*   Updated: 2023/11/28 20:18:32 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,4 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 	while (current->next != NULL)
 		current = current -> next;
 	current -> next = new;
-	new -> prev = current;
 }

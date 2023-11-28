@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 10:22:08 by ghwa              #+#    #+#             */
-/*   Updated: 2023/11/21 11:52:29 by ghwa             ###   ########.fr       */
+/*   Updated: 2023/11/28 20:20:53 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,13 @@
 
 typedef struct s_list
 {
-	int				*content;
+	void			*content;
+	struct s_list	*head;
 	struct s_list	*next;
-	struct s_list	*prev;
 }	t_list;
 
 int		ft_atoi(const char *str);
+long	ft_atol(const char *str);
 void	*ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nitems, size_t size);
 int		ft_isalnum(int c);
@@ -61,7 +62,7 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
-t_list	*ft_lstnew(int *content);
+t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
