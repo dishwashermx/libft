@@ -6,7 +6,7 @@
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/06 10:22:08 by ghwa              #+#    #+#             */
-/*   Updated: 2023/11/28 20:20:53 by ghwa             ###   ########.fr       */
+/*   Updated: 2023/12/07 16:13:49 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@
 typedef struct s_list
 {
 	void			*content;
-	struct s_list	*head;
 	struct s_list	*next;
 }	t_list;
 
@@ -86,5 +85,6 @@ char	*ft_gnlsubstr(char const *s, unsigned int start, size_t len);
 char	*ft_gnlstrdup(const char *s1);
 int		ft_countchr(char *s, char c);
 int		ft_strendcmp(const char *s1, const char *s2);
+int		*ft_dupiarray(const int *sourcearray, size_t size);
 
 #endif
