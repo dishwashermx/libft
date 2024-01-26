@@ -1,23 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ghwa <ghwa@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/20 09:33:39 by ghwa              #+#    #+#             */
-/*   Updated: 2023/11/28 20:19:08 by ghwa             ###   ########.fr       */
+/*   Created: 2023/07/06 10:28:48 by ghwa              #+#    #+#             */
+/*   Updated: 2023/07/06 10:50:41 by ghwa             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-void	ft_lstdelone(t_list *lst, void (*del)(void*))
+int	ft_isdigitarray(char **str)
 {
-	if (lst == NULL || del == NULL)
-		return ;
-	(*del)(lst->content);
-	free(lst);
-	return ;
+	int	i;
+	int	j;
+
+	i = 1;
+	j = 0;
+	while (str[i] != NULL)
+	{
+		while (str[i][j] != '\0')
+		{
+			if (str[i][j] < 48 || str[i][j] > 57)
+				return (0);
+			j++;
+		}
+		j = 0;
+		i++;
+	}
+	return (1);
 }
