@@ -25,7 +25,7 @@ CFILES = ft_putnbr_fd.c ft_putendl_fd.c ft_putstr_fd.c ft_putchar_fd.c \
 	  ft_printf.c ft_printf_utils.c \
 	  ft_get_next_line.c ft_get_next_line_utils.c
 OBJ = ${SRC:.c=.o}
-SRC = $(addprefix ../src/, $(CFILES))
+SRC = $(addprefix src/, $(CFILES))
 FLAGS = -c -Wall -Werror -g3 -Wextra -I.
 INC_DIR = ../inc
 GCC = gcc

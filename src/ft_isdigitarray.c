@@ -23,7 +23,9 @@ int	ft_isdigitarray(char **str)
 	{
 		while (str[i][j] != '\0')
 		{
-			if (str[i][j] < 48 || str[i][j] > 57)
+			if ((str[i][j] == 45 || str[i][j] == 43) && j == 0)
+				;
+			else if (str[i][j] < 48 || str[i][j] > 57)
 				return (0);
 			j++;
 		}
