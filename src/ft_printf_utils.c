@@ -25,7 +25,7 @@ int	ft_pfputnbr(int n, int i)
 	{
 		write(1, "-2147483648", 11);
 		return (11);
-	}	
+	}
 	else if (n < 0)
 	{
 		ft_pfputchar('-');

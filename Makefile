@@ -27,7 +27,7 @@ CFILES = ft_putnbr_fd.c ft_putendl_fd.c ft_putstr_fd.c ft_putchar_fd.c \
 OBJ = ${SRC:.c=.o}
 SRC = $(addprefix src/, $(CFILES))
 FLAGS = -c -Wall -Werror -g3 -Wextra -I.
-INC_DIR = ../inc
+INC_DIR = .
 GCC = gcc
 MAKELIB	= ar rc
 

@@ -30,7 +30,7 @@ int	ft_strendcmp(const char *s1, const char *s2)
 	i--;
 	j--;
 	while (string1[i] == string2[j])
-	{	
+	{
 		if (j == 0)
 			return (1);
 		i--;
