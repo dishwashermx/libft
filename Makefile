@@ -40,7 +40,7 @@ ${NAME}:	${OBJ}
 	@${GCC} ${CFLAGS} -I ${INC_DIR} -c $< -o ${<:.c=.o}
 
 clean:
-	rm -f *.o
+	rm -f src/*.o
 
 fclean: clean
 	rm -f $(NAME)
