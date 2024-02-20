@@ -22,8 +22,8 @@ CFILES = ft_putnbr_fd.c ft_putendl_fd.c ft_putstr_fd.c ft_putchar_fd.c \
 	  ft_strlcat.c ft_strlcpy.c ft_strlcat.c ft_strlcpy.c \
 	  ft_strncmp.c ft_strnstr.c ft_strchr.c ft_strendcmp.c ft_countchr.c \
 	  ft_lstmap.c ft_lstiter.c ft_lstclear.c ft_lstdelone.c ft_lstnew.c ft_lstlast.c ft_lstsize.c ft_lstadd_front.c ft_lstadd_back.c \
-	  ft_printf.c ft_printf_utils.c \
-	  ft_get_next_line.c ft_get_next_line_utils.c
+	  ft_printf.c ft_printf_utils.c ft_get_next_line.c ft_get_next_line_utils.c \
+	  ft_usleep.c
 OBJ = ${SRC:.c=.o}
 SRC = $(addprefix src/, $(CFILES))
 FLAGS = -c -Wall -Werror -g3 -Wextra -I.

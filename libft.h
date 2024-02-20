@@ -18,6 +18,7 @@
 # include <fcntl.h>
 # include <stddef.h>
 # include <stdint.h>
+# include <sys/time.h>
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 1
 # endif
@@ -92,5 +93,7 @@ char	*ft_gnlstrdup(const char *s1);
 int		ft_countchr(char *s, char c);
 int		ft_strendcmp(const char *s1, const char *s2);
 int		*ft_dupiarray(const int *sourcearray, size_t size);
+size_t	get_current_time(void);
+int		ft_usleep(size_t milliseconds);
 
 #endif
